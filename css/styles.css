@@ -836,11 +836,12 @@ img {
   padding: 40px;
 }
 
-.modal-check {
-  margin-top: 20px;
-}
-
 .modal-label.check {
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -849,17 +850,20 @@ img {
   letter-spacing: 0.03em;
 }
 
-.icon-checked {
-  width: 17px;
-  height: 17px;
+.icon-check {
+  width: 16px;
+  height: 15px;
+
+  margin-right: 7px;
 
   border: black 2px solid;
   border-radius: 4px;
 }
 
-.check:checked + .icon-checked {
+.check:checked + .icon-check {
+  background-image: url(../img/check.svg);
+  background-position: center;
   border: none;
-  background-image: url(../img/symbol-defs.svg#icon-check);
 }
 
 .modal-agree {

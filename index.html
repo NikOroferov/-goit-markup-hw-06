@@ -486,40 +486,43 @@
                     Оставьте свои данные, мы вам перезвоним
                 </p>
                 <div class="input-thumb">
-                    <label for="name" class="modal-label">Имя</label>
-                    <input type="name" name="name" id="name" class="modal-input">
+                    <label class="modal-label">
+                        Имя
+                        <input type="name" name="name" class="modal-input">
+                    </label>
                     <svg width="18" height="18" class="input-icon">
                         <use href="./img/symbol-defs.svg#icon-person"></use>
                     </svg>
                 </div>
                 <div class="input-thumb">
-                    <label for="phone" class="modal-label">Телефон</label>
-                    <input type="tel" name="phone" id="phone" class="modal-input">
+                    <label class="modal-label">
+                        Телефон
+                        <input type="tel" name="phone" class="modal-input">
+                    </label>
                     <svg width="18" height="18" class="input-icon">
                         <use href="./img/symbol-defs.svg#icon-phone"></use>
                     </svg>
                 </div>
                 <div class="input-thumb">
-                    <label for="email" class="modal-label">Почта</label>
-                    <input type="email" name="email" id="email" class="modal-input">
+                    <label class="modal-label">
+                        Почта
+                        <input type="email" name="email" class="modal-input">
+                    </label>
                     <svg width="18" height="18" class="input-icon">
                         <use href="./img/symbol-defs.svg#icon-emai"></use>
                     </svg>
                 </div>
                 <div class="input-thumb">
-                    <label for="comment" class="modal-label">Комментарий</label>
-                    <textarea name="comment" id="comment" class="modal-input text" placeholder="Введите текст" rows="5"></textarea>
-                </div>
-                <div class="modal-check">
-                    <input type="checkbox" name="check" id="check" class="check visually-hidden">
-                    <div class="icon-checked"></div>
-                    <label class="modal-label check" for="check">
-                        Соглашаюсь с рассылкой и принимаю 
-                        <a class="modal-agree" href="#">
-                            Условия договора
-                        </a>
+                    <label class="modal-label">
+                        Комментарий
+                        <textarea name="comment" class="modal-input text" placeholder="Введите текст" rows="5"></textarea>
                     </label>
                 </div>
+                    <label class="modal-label check">
+                        <input type="checkbox" name="check" class="check visually-hidden">
+                        <div class="icon-check"></div>
+                        Соглашаюсь с рассылкой и принимаю&ensp;<a class="modal-agree" href="#">Условия договора</a>
+                    </label>
                 <a class="send-btn">Отправить</a>
             </form>
         </div>
