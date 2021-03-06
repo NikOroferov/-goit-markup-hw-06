@@ -248,7 +248,7 @@ img {
 
   background: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: white;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -261,8 +261,8 @@ img {
 
 .hero-link:hover,
 .hero-link:focus {
-  background: var(--third-bcg-color);
-  color: var(--secondary-bcg-color);
+  background: rgba(24, 140, 232, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: none;
 }
 
@@ -647,8 +647,8 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
-    border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
 }
 
@@ -682,8 +682,8 @@ img {
   letter-spacing: 0.06em;
   color: var(--white);
   background-color: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--white);
   cursor: pointer;
 }
@@ -691,6 +691,7 @@ img {
 .subscribe-btn:focus,
 .subscribe-btn:hover {
   background-color: rgba(24, 140, 232, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: transparent;
 }
 
@@ -726,7 +727,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   min-height: 580px;
   width: 530px;
@@ -757,7 +758,7 @@ img {
 
   background-color: var(--white);
   fill: var(--black);
-  transition: fill 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
   cursor: pointer;
 }
@@ -805,7 +806,8 @@ img {
   line-height: 1.143;
   letter-spacing: 0.01em;
   color: var(--secondary-color-text);
-  transition: border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
 }
 
@@ -819,7 +821,7 @@ img {
   line-height: 1.143;
   letter-spacing: 0.01em;
   color: var(--secondary-color-text);
-  transition: border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
 }
 
@@ -866,16 +868,21 @@ img {
   border: none;
 }
 
-.check:focus:checked + .icon-check {
+/* .check:focus:checked + .icon-check {
   background-image: url(../img/check.svg);
   background-position: center;
   border: none;
   outline: black 1px solid;
-}
+} */
 
 .modal-agree {
   color: var(--accent-color);
+}
+
+.modal-agree:hover,
+.modal-agree:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 .input-thumb {
@@ -891,7 +898,7 @@ img {
   left: 12px;
 
   fill: rgba(33, 33, 33, 1);
-  transition: fill 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:hover + .input-icon,
@@ -919,14 +926,17 @@ img {
   text-align: center;
   color: var(--white);
   background-color: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   cursor: pointer;
 }
 
 .send-btn:hover,
 .send-btn:focus {
   background-color: rgba(24, 140, 232, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
 }
 
 /* portfolio.html */
@@ -967,7 +977,8 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -995,6 +1006,8 @@ img {
   margin-top: var(--cards-gap);
   margin-left: var(--cards-gap);
   flex-basis: calc(100% / 3 - var(--cards-gap));
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards-item:hover {
