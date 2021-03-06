@@ -868,13 +868,6 @@ img {
   border: none;
 }
 
-/* .check:focus:checked + .icon-check {
-  background-image: url(../img/check.svg);
-  background-position: center;
-  border: none;
-  outline: black 1px solid;
-} */
-
 .modal-agree {
   color: var(--accent-color);
 }
