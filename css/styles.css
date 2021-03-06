@@ -866,7 +866,7 @@ img {
   border: none;
 }
 
-.check:focus + .icon-check {
+.check:focus:checked + .icon-check {
   background-image: url(../img/check.svg);
   background-position: center;
   border: none;
